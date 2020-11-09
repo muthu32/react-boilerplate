@@ -1,0 +1,1 @@
+This static file will not be processed by react boilerplate
