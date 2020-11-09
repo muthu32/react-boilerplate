@@ -4,7 +4,7 @@ const express = require('express');
 const logger = require('./server/logger');
 
 const argv = require('./server/argv');
-const port = require('./server/port');
+const port = parseInt(process.env.PORT || '3000', 10);
 const setup = require('./server/middlewares/frontendMiddleware');
 const isDev = process.env.NODE_ENV !== 'production';
 const ngrok =
